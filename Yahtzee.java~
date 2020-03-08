@@ -748,6 +748,6 @@ public class Yahtzee extends JFrame{
   // end startNewGame()
   
   public static void main(String[] args){
-    new Test();
+    new Yahtzee();
   }
 }

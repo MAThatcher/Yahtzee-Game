@@ -293,8 +293,8 @@ public class Yahtzee extends JFrame{
           westButtons[2].setVisible(false);
           totalScore += scoreToAdd;
           totalScoreLabel.setText(String.valueOf(totalScore));
-          scoreSelected();
           bonusScore+=scoreToAdd;
+          scoreSelected();
       }
     });
     
@@ -310,8 +310,8 @@ public class Yahtzee extends JFrame{
           westButtons[3].setVisible(false);
           totalScore += scoreToAdd;
           totalScoreLabel.setText(String.valueOf(totalScore));
-          scoreSelected();
           bonusScore+=scoreToAdd;
+          scoreSelected();
       }
     });
     
@@ -327,8 +327,8 @@ public class Yahtzee extends JFrame{
           westButtons[4].setVisible(false);
           totalScore += scoreToAdd;
           totalScoreLabel.setText(String.valueOf(totalScore));
-          scoreSelected();
           bonusScore+=scoreToAdd;
+          scoreSelected();
       }
     });
     
@@ -344,8 +344,8 @@ public class Yahtzee extends JFrame{
           westButtons[5].setVisible(false);
           totalScore += scoreToAdd;
           totalScoreLabel.setText(String.valueOf(totalScore));
-          scoreSelected();
           bonusScore+=scoreToAdd;
+          scoreSelected();
       }
     });
     
@@ -361,8 +361,8 @@ public class Yahtzee extends JFrame{
           westButtons[6].setVisible(false);
           totalScore += scoreToAdd;
           totalScoreLabel.setText(String.valueOf(totalScore));
-          scoreSelected();
           bonusScore+=scoreToAdd;
+          scoreSelected();
       }
     });
     
@@ -666,9 +666,12 @@ public class Yahtzee extends JFrame{
       for (int i=0; i<j; i++){ 
           arr[i] = temp[i]; 
       }
-      if (temp[0] == temp[1]-1 &&
-          temp[1] == temp[2]-1 &&
-          temp[2] == temp[3]-1){
+      if ((temp[0] == temp[1]-1 &&
+           temp[1] == temp[2]-1 &&
+           temp[2] == temp[3]-1)||
+          (temp[3] == temp[4]-1 &&
+           temp[1] == temp[2]-1 &&
+           temp[2] == temp[3]-1)){
         eastButtons[4].setEnabled(true);
       }
     }
